@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head><title>JIRA Auto-Linker options</title></head>
+<body>
+<h1>
+    JIRA Auto-Linker
+</h1>
+
+<div>
+    <p>
+        <label for="projects">
+            <strong>Project abbreviations:</strong>
+        </label>
+    </p>
+    <p><em>One project abbreviation per line.</em></p>
+    <textarea id="projects"></textarea>
+</div>
+
+<div>
+    <p>
+        <label for="url">
+            <strong>JIRA URL</strong>
+        </label>
+    </p>
+    <p><em>Enter the address that you use to access your JIRA instance.</em></p>
+    <input type="text" id="url">
+</div>
+
+<div id="status"></div>
+<button id="save">Save</button>
+
+<script src="options.js"></script>
+</body>
+</html>

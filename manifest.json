@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+
+  "name": "JIRA Auto-Linker",
+  "description": "Detect a JIRA issue key pattern in page text and automatically link it to the JIRA issue.",
+  "version": "1.0",
+
+  "content_scripts": [
+    {
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_end",
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ],
+  "options_page": "options.html",
+
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+
+  "permissions": [
+    "storage"
+  ]
+}
